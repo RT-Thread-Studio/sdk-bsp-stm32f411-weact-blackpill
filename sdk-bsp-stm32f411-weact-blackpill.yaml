@@ -1,0 +1,76 @@
+board:
+  buy_url_cn: https://item.taobao.com/item.htm?id=594670660262&spm=a1z10.1-c.w4004-21792748727.2.25f678f2ZvTrO1&skuId=4275490085468
+  buy_url_global: https://www.aliexpress.com/item/1005001456186625.html?spm=a2g0o.store_pc_promotion.0.0.40154e88omedO5
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: STM32F411 BlackPill is a development board based on ARM Cortex-M4
+    core launched by WeAct. The highest frequency is 100Mhz, and the chip of the development
+    board is STM32F411CE.
+  description_zh: STM32F411 BlackPill 是 WeAct 推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 100Mhz，该开发板芯片为
+    STM32F411CE。
+  emulator_machine: ''
+  large_image: documents/images/STM32F4x1-V22-3D.jpg
+  name: STM32F411-WEACT-BLACKPILL
+  price_cn: 22.9 CNY
+  price_global: 3.72 USD
+  sale_contact_cn: N/A
+  sale_contact_global: N/A
+  small_image: documents/images/STM32F4x1-V22-3D(small).jpg
+  vendor: STMicroelectronics
+  version: 1.0.0
+chip:
+  chip_name: STM32F411CEU6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F4
+  source_freq: '8000000'
+  sub_series_name: STM32F411
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/STM32F411CEU6_ReferenceManual.pdf
+  title: STM32F411CEU6_ReferenceManual
+- category: sheet
+  file: documents/STM32F411CEU6_Datasheet.pdf
+  title: STM32F411CEU6_Datasheet
+features:
+- 'STM32F411CEU6 100Mhz，128Kb RAM，512Kb ROM '
+- 25Mhz high speed crystal & 32.768Khz 6PF low speed crystal
+- The board contains 3 keys, reset key, BOOT0 key, user key
+- 'Memory: 512Kbytes Flash Memory 128Kbytes SRAM SPI Flash (optional)'
+- 'USART x 3、I2C x 3、SPI x 5、USBFS x 1 '
+- 'ADC x 1(10)、I2S x 5、CRC x 1、TIM x 8 '
+- 'Serial port download: use USB to serial port to connect the kernel board PA9, PA10,
+  do not use USB port power supply'
+features_zh:
+- 'STM32F411CEU6 100Mhz，128Kb RAM，512Kb ROM '
+- 25Mhz 高速晶振 &  32.768Khz 6PF 低速晶振
+- 板载3个按键，复位键， BOOT0键，用户键
+- Memory：512Kbytes Flash 存储器 128Kbytes SRAM  SPI Flash（可选）
+- 'USART x 3、I2C x 3、SPI x 5、USBFS x 1 '
+- 'ADC x 1(10)、I2S x 5、CRC x 1、TIM x 8 '
+- 串口下载：使用USB转串口连接内核板PA9、PA10即可，不要使用USB口供电
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+example_projects: []
+template_projects:
+- project_name: stm32f411-weact-blackpill-template
+  project_description: 开发板模板工程
+  project_type: rt-thread|@full|@5.1.0
+  builtin_files:
+  - source_path_offset: projects/project_0
+    target_path_offset: ''
+    files_and_folders:
+    - "*"
+  - source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders:
+    - libraries
+    - rt-thread
+  external_files: []
+yaml_version: 3
